@@ -1,0 +1,653 @@
+<!doctype html>
+<html class="no-js" lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>La vida de los gorilas</title>
+  <meta name="description" content="En la jungla de Internet desde 2001">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700" rel="stylesheet">
+
+  <style>
+    /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}h1{font-size:2em;margin:0.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace, monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace, monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-0.25em}sup{top:-0.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,[type="button"],[type="reset"],[type="submit"]{-webkit-appearance:button}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type="button"]:-moz-focusring,[type="reset"]:-moz-focusring,[type="submit"]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:0.35em 0.75em 0.625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type="checkbox"],[type="radio"]{box-sizing:border-box;padding:0}[type="number"]::-webkit-inner-spin-button,[type="number"]::-webkit-outer-spin-button{height:auto}[type="search"]{-webkit-appearance:textfield;outline-offset:-2px}[type="search"]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}template{display:none}[hidden]{display:none}
+  </style>
+  <style>
+/*! HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body {
+    margin: 3rem 0;
+    font-size: 1.3rem;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+}
+
+
+p {
+    text-align: center;
+    line-height: 1.4;
+    margin: 2rem 2rem 2rem 2rem;
+}
+
+
+p::first-line {
+    font-weight: 700;
+}
+
+
+p::after {
+    content: "~";
+    display: block;
+    margin: 2rem 0;
+    opacity: 0.3;
+}
+
+
+p:last-child::after {
+    display: none;
+}
+
+
+p:first-child {
+    font-size: 2rem;
+}
+
+
+p:first-child::after {
+    opacity: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster */
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+  </style>
+</head>
+
+<body>
+  <p>g</p>
+
+  <p>¿Qué está pasando<br>
+    ahora mismo?</p>
+
+  <p>Se ha caido todo<br>
+    pero estamos bien</p>
+
+  <p>Hemos venido a este mundo<br>
+    para conectar con otros</p>
+
+  <p>Es una decisión<br>
+    el dejarse fascinar<br>
+    por la belleza de las cosas</p>
+
+  <p>La vida es un concurso<br>
+    en el que al final<br>
+    lo perderemos todo</p>
+
+  <p>En el momento presente<br>
+    es cuando todo<br>
+    está conectado</p>
+
+  <p>¿Qué sentido puede tener<br>
+    construir castillos<br>
+    de arena?</p>
+
+  <p>El arte y el humor<br>
+    son las herramientas<br>
+    para curar</p>
+
+  <p>El desierto esconde flores<br>
+    para quien quiera<br>
+    encontrarlas</p>
+
+  <p>Simple<br>
+    es lo más difícil<br>
+    siempre</p>
+
+  <p>La vida es un concurso<br>
+    en el que al final<br>
+    lo pierdes todo</p>
+
+  <p>Quiero compartir mi vida<br>
+    con personas que sepan darle nombre<br>
+    a sus sentimientos</p>
+
+  <p>Hay más belleza<br>
+    en la mirada que<br>
+    en los ojos</p>
+
+  <p>La muerte nos enseña<br>
+    qué es lo más importante</p>
+
+  <p>Dar y recibir amor<br>
+    mi única regla de medir</p>
+
+  <p>Haz de tu sensibilidad<br>
+    un pedestal</p>
+
+  <p>El eco<br>
+    de un chat vacío</p>
+
+  <p>He vuelto a apostar<br>
+    por el caballo perdedor</p>
+
+  <p>Comenzando de nuevo<br>
+    en el punto de partida</p>
+
+  <p>No dejes tu deseo<br>
+    en manos de otros</p>
+
+  <p>¿Eres feliz con nosotros?<br>
+    porque si no<br>
+    vete</p>
+
+  <p>Ahora sé<br>
+    que estás ahí<br>
+    y nos encontraremos</p>
+
+  <p>No lo hago<br>
+    para conseguir nada</p>
+
+  <p>No da tiempo<br>
+    a todo</p>
+
+  <p>No queriendo hacer más<br>
+    consigo hacer más</p>
+
+  <p>Se oye<br>
+    un zumbido<br>
+    permanente</p>
+
+  <p>Así ya<br>
+    está bien</p>
+
+  <p>No es cuestión de si te lo mereces<br>
+    la vida es símplemente así</p>
+
+  <p>Quisiera vivir cada día<br>
+    como si fuera<br>
+    una continua Primavera</p>
+
+  <p>Tus recuerdos más vivos<br>
+    están formados por momentos<br>
+    en los que estabas<br>
+    centrado en el presente</p>
+
+  <p>Alguien me ha pedido<br>
+    que dibuje<br>
+    pájaros en libertad</p>
+
+  <p>Ya lo has aprendido todo<br>
+    Ahora haz algo</p>
+
+  <p>Si no haces nada para remediarlo<br>
+    te echas a perder</p>
+
+  <p>Viviendo<br>
+    te juegas la vida</p>
+
+  <p>El vaso<br>
+    que nunca se llena</p>
+
+  <p>Envejece<br>
+    sin convertirte<br>
+    en la caricatura<br>
+    de ti mismo</p>
+
+  <p>Dejar caer el arco<br>
+    y abrazar la diana</p>
+
+  <p>El inconsciente<br>
+    Es un hijoputa</p>
+
+  <p>Quién dejo que me robe<br>
+    el poder?</p>
+
+  <p>Imposible<br>
+    comer sólo una mandarina</p>
+
+  <p>Sin ti<br>
+    El universo no sería como es</p>
+
+  <p>Una mariposa<br>
+    bate sus alas<br>
+    por la noche<br>
+    cruzando el océano</p>
+
+  <p>Dale un espacio<br>
+    al vacío</p>
+
+  <p>Esa edad<br>
+    en la que empiezas a acumular fracasos</p>
+
+  <p>Gente que no pide permiso<br>
+    para ser feliz</p>
+
+  <p>De vez en cuando<br>
+    hay que limpiar los cristales de las ventanas</p>
+
+  <p>Keyframes<br>
+    en el timeline de la vida</p>
+
+  <p>Nadie<br>
+    tenía que estar ahí</p>
+
+  <p>No me hago a la idea<br>
+    De qué ya no estés</p>
+
+  <p>Bailar es<br>
+    la alegría de vivir</p>
+
+  <p>Haz<br>
+    Menos</p>
+
+  <p>Las vacaciones<br>
+    son un estado mental</p>
+
+  <p>Los niños dan más<br>
+    de lo que reciben</p>
+
+  <p>Keith Richards es un guitarrista estupendo<br>
+    y un padre pésimo</p>
+
+  <p>Los que no tienen miedo a morir<br>
+    hacen cosas extraordinarias</p>
+
+  <p>En esta sociedad estás desafectado<br>
+    hasta que te conviertes en un afectado</p>
+
+  <p>Te quiero porque tu me quieres<br>
+    Me quieres porque yo te quiero<br>
+    El amor se reciproca</p>
+
+  <p>La creatividad se alimenta de estímulos<br>
+    pero necesita vacío<br>
+    para surgir</p>
+
+  <p>Ella se pinta de rojo<br>
+    para luchar contra la invisibilidad</p>
+
+  <p>Tu vida necesita enamorarse<br>
+    de momentos especiales</p>
+
+  <p>Una persona que tenía seguridad<br>
+    y estructura y era triste</p>
+
+
+  <p>Ahora que todo se desmorona a su alrededor<br>
+    que el caos reina<br>
+    se siente más viva que nunca<br>
+    se siente libre y viva</p>
+
+  <p>No olvides<br>
+    qué es<br>
+    lo realmente importante</p>
+
+  <p>Déjate algo<br>
+    sin hacer<br>
+    para mañana</p>
+
+  <p>Observando los pensamientos<br>
+    desde fuera</p>
+
+  <p>¿Qué es lo realmente importante?</p>
+
+  <p>No te mires al espejo<br>
+    mírate a los ojos</p>
+
+  <p>La respiración<br>
+    es el hilo conductor<br>
+    de la vida</p>
+
+  <p>Lo primero que te pide hacer la mente<br>
+    es a lo que está acostumbrada</p>
+
+  <p>Hay cosas más importantes<br>
+    que esto</p>
+
+  <p>Ver a Dios<br>
+    en la cara de tus enemigos</p>
+
+  <p>Un buen día<br>
+    regalé todas mis buenas ideas<br>
+    ahora ya no me queda ninguna</p>
+
+  <p>El Coleccionismo<br>
+    es una enfermedad</p>
+
+  <p>Una vida<br>
+    a contrareloj</p>
+
+  <p>Pequeñas relaciones<br>
+    pequeños momentos<br>
+    con los que iluminar la vida<br>
+    como flores que dan color<br>
+    a la gris existencia</p>
+
+  <p>El mundo lleno de gente excepcional<br>
+    que se sienten mediocres</p>
+
+  <p>La mujer con los ojos más penetrantes<br>
+    necesita al hombre más superficial<br>
+    para sentirse segura</p>
+
+  <p>Las ideas surgen de la cabeza<br>
+    pero necesitan de las piernas para ser estimulada:<br>
+    moverse, salir del sitio para que lo que está oculto aparezca</p>
+
+  <p>Estamos en la era<br>
+    de los damnificados</p>
+
+  <p>¿Porqué dios<br>
+    nos tendría algo preparado<br>
+    si no somos más que una hormiga?</p>
+
+  <p>Cuando un iluminado te mira<br>
+    sus ojos te miran adentro<br>
+    y su mirada refleja el gozo de vivir</p>
+
+  <p>Gente especialmente dañada<br>
+    Los artistas, los psicólogos, los ginecólogos y los jugadores de ajedrez<br>
+    Todos son profesionales de vocación<br>
+    Vocación que nace ya muy de pequeños cuando sus familias eran como eran</p>
+
+  <p>Estoy pleno de amor<br>
+    y vacío de sentido</p>
+
+  <p>Estamos continuamente dando rodeos a la solución<br>
+    que siempre ha estado aqui, al alcance de la mano<br>
+    Sólo hace falta estar lo suficientemente dañado<br>
+    para tener el valor de solucionar nuestros problemas</p>
+
+  <p>Si escuchamos a los Ramones<br>
+    nunca moriremos</p>
+
+  <p>Nos olvidamos de que comemos<br>
+    lo que nos rodea<br>
+    y pensamos que producimos<br>
+    nuestro propio alimento</p>
+
+  <p>Quiero un cafe<br>
+    bien cargado de sentido</p>
+
+  <p>Quiero ser<br>
+    la OTRA mitad</p>
+
+  <p>Un requiem<br>
+    por todos los caracoles<br>
+    que he pisado sin querer<br>
+    en mi vida</p>
+
+
+</body>
+
+</html>
